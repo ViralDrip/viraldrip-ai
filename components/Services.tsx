@@ -5,7 +5,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 export const Services: React.FC = () => {
   return (
-    <section id="services" className="py-32 md:py-40 bg-slate-950 relative flex flex-col justify-center overflow-hidden">
+    <section id="services" className="py-20 md:py-32 lg:py-40 bg-slate-950 relative flex flex-col justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 

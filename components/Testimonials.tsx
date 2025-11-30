@@ -5,7 +5,7 @@ import { Quote, TrendingUp, Star, CheckCircle2 } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   return (
-    <section id="testimonials" className="py-32 md:py-40 bg-slate-950 relative overflow-hidden flex flex-col justify-center">
+    <section id="testimonials" className="py-20 md:py-32 lg:py-40 pb-32 md:pb-40 lg:pb-48 bg-slate-950 relative overflow-hidden flex flex-col justify-center">
       
       {/* Dynamic Background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-slate-950 z-0">
@@ -35,13 +35,13 @@ export const Testimonials: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-center">
           {TESTIMONIALS.map((t, i) => (
-            <motion.div 
-              key={i} 
+            <motion.div
+              key={i}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2, duration: 0.6 }}
-              className={`relative group ${i === 1 ? 'lg:-translate-y-12' : ''}`} // Stagger effect only on large screens
+              className="relative group"
             >
               {/* Card Glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10 transform group-hover:scale-105"></div>

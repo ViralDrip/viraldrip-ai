@@ -89,7 +89,7 @@ const getColorClasses = (color: string) => {
 
 export const Process: React.FC = () => {
   return (
-    <section id="process" className="py-32 md:py-40 bg-slate-950 relative overflow-hidden">
+    <section id="process" className="py-20 md:py-32 lg:py-40 bg-slate-950 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -180,20 +180,22 @@ export const Process: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-8 px-8 py-4 rounded-2xl bg-slate-900/60 border border-white/10 backdrop-blur-sm">
-            <div className="text-left">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 px-4 md:px-8 py-6 md:py-4 rounded-2xl bg-slate-900/60 border border-white/10 backdrop-blur-sm max-w-4xl mx-auto">
+            <div className="text-center lg:text-left">
               <p className="text-sm text-slate-400 mb-1">Average Time to First Content</p>
               <p className="text-2xl font-bold text-white">21 Days</p>
             </div>
-            <div className="w-px h-12 bg-white/10"></div>
-            <div className="text-left">
+            <div className="hidden lg:block w-px h-12 bg-white/10"></div>
+            <div className="w-full lg:w-auto h-px lg:h-auto bg-white/10 lg:hidden"></div>
+            <div className="text-center lg:text-left">
               <p className="text-sm text-slate-400 mb-1">Client Success Rate</p>
               <p className="text-2xl font-bold text-white">100%</p>
             </div>
-            <div className="w-px h-12 bg-white/10"></div>
+            <div className="hidden lg:block w-px h-12 bg-white/10"></div>
+            <div className="w-full lg:w-auto h-px lg:h-auto bg-white/10 lg:hidden"></div>
             <a
               href="#book"
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:scale-105 transition-transform flex items-center gap-2"
+              className="w-full lg:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2"
             >
               Start Your Pipeline
               <ArrowRight className="w-4 h-4" />

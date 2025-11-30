@@ -11,7 +11,7 @@ export const Calculator: React.FC = () => {
   const potentialRevenue = moneySavedPerYear * 3; // Estimating revenue upside from consistency
 
   return (
-    <section id="calculator" className="py-32 md:py-40 bg-slate-950 relative overflow-hidden">
+    <section id="calculator" className="py-20 md:py-32 lg:py-40 bg-slate-950 relative overflow-hidden">
       {/* Background - very subtle */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-purple-600/5 rounded-full blur-[140px] pointer-events-none"></div>
 

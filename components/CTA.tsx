@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Check } from 'lucide-react';
 
 export const CTA: React.FC = () => {
   return (
-    <section id="book" className="py-32 md:py-40 bg-slate-950 relative overflow-hidden flex items-center justify-center border-t border-white/5">
+    <section id="book" className="py-20 md:py-32 lg:py-40 bg-slate-950 relative overflow-hidden flex items-center justify-center border-t border-white/5">
        {/* Subtle Background Glow */}
        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[150px] pointer-events-none"></div>
 
