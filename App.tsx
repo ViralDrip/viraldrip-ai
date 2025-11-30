@@ -34,9 +34,9 @@ const ScrollSection = ({ children, className }: { children: React.ReactNode, cla
 
 function App() {
   return (
-    <div className="bg-slate-950 min-h-screen text-slate-50 selection:bg-purple-500/30 overflow-x-hidden">
+    <div className="bg-slate-950 min-h-screen text-slate-50 selection:bg-purple-500/30 overflow-x-hidden w-full max-w-full">
       <Header />
-      <main className="flex flex-col">
+      <main className="flex flex-col w-full max-w-full overflow-x-hidden">
         {/* Hero has slightly different logic usually, but let's wrap it for consistency or keep it static */}
         <section className='min-h-screen'>
             <Hero />
