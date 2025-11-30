@@ -129,7 +129,7 @@ export const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative">
              <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_4rem,black_calc(100%-4rem),transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_6rem,black_calc(100%-6rem),transparent)]">
                 <motion.div
-                    className="flex gap-6 py-2"
+                    className="flex gap-6 py-4"
                     animate={{ x: [0, -1920] }}
                     transition={{
                         repeat: Infinity,

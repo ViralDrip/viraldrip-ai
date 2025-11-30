@@ -89,7 +89,7 @@ const getColorClasses = (color: string) => {
 
 export const Process: React.FC = () => {
   return (
-    <section id="process" className="py-20 md:py-32 lg:py-40 bg-slate-950 relative overflow-hidden">
+    <section id="process" className="py-20 md:py-32 lg:py-40 bg-slate-950 relative overflow-hidden w-full">
       {/* Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -114,7 +114,7 @@ export const Process: React.FC = () => {
         </motion.div>
 
         {/* Timeline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 overflow-hidden">
           {timelineSteps.map((step, index) => {
             const Icon = step.icon;
             const colors = getColorClasses(step.color);
@@ -134,7 +134,7 @@ export const Process: React.FC = () => {
                 )}
 
                 {/* Card */}
-                <div className={`relative bg-slate-900/60 backdrop-blur-sm border ${colors.border} rounded-2xl p-4 md:p-6 hover:scale-105 transition-all duration-300 ${colors.glow} hover:shadow-2xl`}>
+                <div className={`relative bg-slate-900/60 backdrop-blur-sm border ${colors.border} rounded-2xl p-4 md:p-6 md:hover:scale-105 transition-all duration-300 ${colors.glow} hover:shadow-2xl`}>
                   {/* Icon */}
                   <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${colors.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
                     <Icon className="w-7 h-7 text-white" />
