@@ -19,13 +19,12 @@ const ScrollSection = ({ children, className }: { children: React.ReactNode, cla
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.95, 1, 1, 0.95]);
-  const y = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [50, 0, 0, -50]);
+  const y = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [30, 0, 0, -30]);
 
   return (
-    <motion.div 
-      ref={ref} 
-      style={{ opacity, scale, y }} 
+    <motion.div
+      ref={ref}
+      style={{ opacity, y }}
       className={`w-full ${className}`}
     >
       {children}
