@@ -27,7 +27,7 @@ const getPlatformColor = (platform: string) => {
 export const Hero: React.FC = () => {
 
   return (
-    <section className="relative min-h-screen flex flex-col pt-20 bg-slate-950 overflow-hidden">
+    <section className="relative h-screen flex flex-col pt-20 bg-slate-950 overflow-hidden">
       
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -125,9 +125,9 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Footer Ticker - Redesigned Cards */}
-      <div className="mt-auto w-full border-t border-white/5 bg-slate-950/80 backdrop-blur-xl py-6 pb-16 md:pb-8 relative z-20 overflow-hidden">
+      <div className="mt-auto w-full border-t border-white/5 bg-slate-950/80 backdrop-blur-xl py-6 pb-12 md:pb-8 relative z-20">
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative">
-             <div className="flex overflow-x-hidden overflow-y-visible">
+             <div className="flex overflow-hidden">
                 <motion.div
                     className="flex gap-6 py-4"
                     animate={{ x: [0, -1920] }}
